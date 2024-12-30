@@ -1,7 +1,25 @@
-<nav class="bg-white-700 text-center py-2 shadow">
-    <img src="logo.png" alt="Logo" class="h-12 mx-auto">
-    <a href="home.html" class="mx-3 hover:text-gray-600">Home</a>
-    <a href="explore.html" class="mx-3 hover:text-gray-600">Explore</a>
-    <a href="about.html" class="mx-3 hover:text-gray-600">About</a>
+<nav style="background-color: #971D12;" class="py-2 shadow-md">
+    <div class="container mx-auto px-4 flex items-center justify-between lg:justify-center relative">
+        <!-- Hamburger Button (Mobile Only) -->
+        <button id="menu-toggle" class="block lg:hidden text-white focus:outline-none absolute left-4">
+            <img src="assets/others/hamburger.svg" alt="Menu" class="w-8 h-8">
+        </button>
+
+        <!-- Logo -->
+        <img src="assets/others/logo-elfest.jpg" alt="Logo"
+            class="h-12 w-12 rounded-full mx-auto lg:mx-0 lg:absolute lg:left-4">
+
+        <!-- Links -->
+        <div id="menu"
+            class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 text-white lg:static lg:bg-transparent lg:py-0 bg-[#971D12] p-4 absolute top-full left-0 w-full lg:w-auto">
+            <a href="home.html"
+                class="block lg:inline px-3 py-2 rounded-md text-center hover:bg-[#FF6F00] transition duration-300">Home</a>
+            <a href="explore.html"
+                class="block lg:inline px-3 py-2 rounded-md text-center hover:bg-[#FF6F00] transition duration-300">Explore</a>
+            <a href="about.html"
+                class="block lg:inline px-3 py-2 rounded-md text-center hover:bg-[#FF6F00] transition duration-300">About</a>
+        </div>
+    </div>
 </nav>
-<script src="https://cdn.tailwindcss.com"></script>
+
+<script src="script.js"></script>
