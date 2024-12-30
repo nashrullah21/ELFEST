@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELFEST 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .background {
+            background-image: url('assets/others/background-with-pic.png');
+            background-size: cover;
+            background-position: top;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 2rem;
+            color: #FFF;
+            padding: 10px;
+        }
+
+        .countdown div {
+            background: black;
+            padding: 10px 20px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <section class="flex flex-col items-center h-auto background pt-28">
+        <img src="assets/home/title.png" alt="Logo">
+        <button
+            class="bg-white text-black font-bold py-4 px-8 rounded-full mt-2 text-xl shadow-inner border border-gray-300">
+            Buy Tickets Here!
+        </button>
+
+        <!-- Phase 1 -->
+        <div class="flex flex-col items-center pt-16">
+            <img src="assets/home/phase1-title.png">
+        </div>
+
+        <section class="flex flex-col items-center">
+            <div class="flex flex-wrap items-center justify-center h-auto p-10 gap-10">
+                <img src="assets/home/guest-star-for-revenge.png" alt="Guest Star 1" class="max-w-xs sm:max-w-md">
+                <img src="assets/home/guest-star-jl.png" alt="Guest Star 2" class="max-w-xs sm:max-w-md">
+                <img src="assets/home/guest-star-the-panturas.png" alt="Guest Star 3" class="max-w-xs sm:max-w-md">
+            </div>
+            <div class="flex flex-col items-center">
+                AND MANY MORE!
+            </div>
+        </section>
+        <!-- End Phase 1 -->
+
+
+    </section>
+    <!-- End Content -->
+
+    <div class="countdown">
+        <!-- Countdown Timer -->
+        <div id="days">00</div>
+        <div id="hours">00</div>
+        <div id="minutes">00</div>
+        <div id="seconds">00</div>
+    </div>
+    <div id="footer" class="p-4 bg-black text-white text-center">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
