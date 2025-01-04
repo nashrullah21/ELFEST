@@ -12,32 +12,37 @@ function loadComponent(componentId, url) {
     .catch((err) => console.error("gagal:", err));
 }
 
-// Countdown Timer
-function countdown() {
-  const countToDate = new Date("April 26, 2025 00:00:00").getTime();
-  const now = new Date().getTime();
-  const difference = countToDate - now;
+function handleTickInit(tick) {
+    const targetDate = new Date('2025-04-26T00:00:00');
+    Tick.helper.interval(function () {
+        var now = new Date();
+        var timeDiff = targetDate - now;
 
-  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-  const hours = Math.floor(
-    (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerText = days;
-  document.getElementById("hours").innerText = hours;
-  document.getElementById("minutes").innerText = minutes;
-  document.getElementById("seconds").innerText = seconds;
+        tick.value = {
+            sep: ':',
+            days: days,
+            hours: hours,
+            minutes: minutes,
+            seconds: seconds
+        };
+    });
 }
 
-setInterval(countdown, 1000);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const menuToggle = document.getElementById("menu-toggle");
+//     const menu = document.getElementById("menu");
 
-  menuToggle.addEventListener("click", function () {
-    menu.classList.toggle("hidden");
-  });
-});
+//     menuToggle.addEventListener("click", function () {
+//         menu.classList.toggle("hidden");
+//     });
+// });
+
+
+
+
