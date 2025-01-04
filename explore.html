@@ -2,116 +2,121 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Explore</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <div id="navbar"></div>
-  <!-- Konten halaman di sini -->
-  <div class="relative overflow-hidden">
-    <img src="./assets/others/background-with-pic.png" class="absolute top-0 w-full object-cover -z-10" />
-    <div class="pt-5">
-      <img src="./assets/explore/title.png" alt="Elfest Archives" class="max-w-32 mx-auto sm:max-w-48" />
-    </div>
-    <div class="sm:p-10 p-5">
-      <div class="aspect-video w-full sm:max-w-md bg-black mx-auto">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/DVEYn-X0xNA?si=Dw2JIv1Z2qWO9wan&amp;controls=0"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-  <div class="relative py-10 ">
-    <div class="bg-[url('assets/explore/background.png')] bg-cover bg-center absolute inset-0 size-full -z-20"></div>
-    <img src="./assets/others/element-(guest-star).png" draggable="false" class="absolute bottom-0 w-full" />
-    <!-- START CAROUSEL -->
-    <div>
-      <img src="./assets/explore/elfest-ambience.png" alt="Elfest 2024's Ambiences"
-        class="max-w-sm sm:max-w-md mx-auto">
-      <div class="w-full sm:max-w-2xl max-w-xs mx-auto px-4 aspect-video">
-        <div class="relative">
-          <!-- Carousel container -->
-          <div class="overflow-hidden rounded-lg shadow-lg">
-            <div id="carousel" class="flex transition-transform duration-500">
-              <img src="./assets/carousel/1.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-              <img src="./assets/carousel/2.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-              <img src="./assets/carousel/3.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-              <img src="./assets/carousel/4.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-              <img src="./assets/carousel/5.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-              <img src="./assets/carousel/6.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-              <img src="./assets/carousel/7.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-            </div>
-          </div>
-
-          <!-- Navigation arrows -->
-          <button id="prevBtn"
-            class="absolute top-1/2 -left-1 sm:-left-3 transform -translate-y-1/2 -translate-x-full bg-black p-1 rounded-full shadow-md hover:bg-gray-700 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ffffff" class="w-4 h-4">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button id="nextBtn"
-            class="absolute top-1/2 -right-1 sm:-right-3 transform -translate-y-1/2 translate-x-full bg-black p-1 rounded-full shadow-md hover:bg-gray-700 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ffffff" class="w-4 h-4">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+    <nav id="navbar">
+        <button id="menu-toggle">Toggle Menu</button>
+        <div id="menu" class="hidden">Menu Content</div>
+    </nav> <!-- Konten halaman di sini -->
+    <div class="relative overflow-hidden">
+        <img src="./assets/others/background-with-pic.png" class="absolute top-0 w-full object-cover -z-10" />
+        <div class="pt-5">
+            <img src="./assets/explore/title.png" alt="Elfest Archives" class="max-w-32 mx-auto sm:max-w-48 z-0" />
         </div>
-      </div>
+        <div class="sm:p-10 p-5">
+            <div class="aspect-video h- w-full sm:max-w-md bg-black mx-auto">
+                <video width="100%" height="100%" controls autoplay muted>
+                    <source src="./assets/explore/elfest.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
     </div>
-    <!-- END CAROUSEL -->
-    <div class="space-y-3 p-10 relative">
-      <img src="./assets/explore/Buy-your-tiket.png" alt="Buy Your Ticket Now" class="sm:max-w-md max-w-xs mx-auto" />
-      <button
-        class="mx-auto rounded-full bg-white hover:brightness-95 shadow-[4px_4px_0px_rgba(0,0,0,1)] sm:px-20 px-10 py-1 border border-black sm:py-3 block">
-        Click Here
-      </button>
+    <div class="relative py-10 ">
+        <div class="bg-[url('assets/explore/background.png')] bg-cover bg-center absolute inset-0 size-full -z-20">
+        </div>
+        <img src="./assets/others/element-(guest-star).png" draggable="false" class="absolute bottom-0 w-full" />
+        <!-- START CAROUSEL -->
+        <div>
+            <img src="./assets/explore/elfest-ambience.png" alt="Elfest 2024's Ambiences"
+                class="max-w-sm sm:max-w-md mx-auto">
+            <div class="w-full sm:max-w-2xl max-w-xs mx-auto px-4 aspect-video">
+                <div class="relative">
+                    <!-- Carousel container -->
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <div id="carousel" class="flex transition-transform duration-500">
+                            <img src="./assets/carousel/1.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
+                            <img src="./assets/carousel/2.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
+                            <img src="./assets/carousel/3.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
+                            <img src="./assets/carousel/4.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
+                            <img src="./assets/carousel/5.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
+                            <img src="./assets/carousel/6.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
+                            <img src="./assets/carousel/7.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
+                        </div>
+                    </div>
+
+                    <!-- Navigation arrows -->
+                    <button id="prevBtn"
+                        class="absolute top-1/2 -left-1 sm:-left-3 transform -translate-y-1/2 -translate-x-full bg-black p-1 rounded-full shadow-md hover:bg-gray-700 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ffffff"
+                            class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button id="nextBtn"
+                        class="absolute top-1/2 -right-1 sm:-right-3 transform -translate-y-1/2 translate-x-full bg-black p-1 rounded-full shadow-md hover:bg-gray-700 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ffffff"
+                            class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- END CAROUSEL -->
+        <div class="space-y-3 p-10 relative">
+            <img src="./assets/explore/Buy-your-tiket.png" alt="Buy Your Ticket Now"
+                class="sm:max-w-md max-w-xs mx-auto" />
+            <button onclick="window.open('https://www.goersapp.com/event/elfest2025')"
+                class="mx-auto rounded-full font-semibold font-titan-one text-lg bg-white hover:brightness-95 shadow-[4px_4px_0px_rgba(0,0,0,1)] sm:px-20 px-10 py-1 border border-black sm:py-3 block tracking-widest">
+                CLICK HERE </button>
+        </div>
     </div>
-  </div>
-  <div id="footer"></div>
-  <script src="script.js"></script>
-  <script>
-    const carousel = document.getElementById("carousel");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
+    <div id="footer"></div>
+    <script src="script.js"></script>
+    <script>
+        const carousel = document.getElementById("carousel");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
 
-    let index = 0;
-    let autoSlideInterval;
+        let index = 0;
+        let autoSlideInterval;
 
-    prevBtn.addEventListener("click", () => {
-      clearInterval(autoSlideInterval);
-      index = index > 0 ? index - 1 : carousel.children.length - 1;
-      updateCarousel();
-      startAutoSlide();
-    });
+        prevBtn.addEventListener("click", () => {
+            clearInterval(autoSlideInterval);
+            index = index > 0 ? index - 1 : carousel.children.length - 1;
+            updateCarousel();
+            startAutoSlide();
+        });
 
-    // Navigate to next
-    nextBtn.addEventListener("click", () => {
-      clearInterval(autoSlideInterval);
-      index = index < carousel.children.length - 1 ? index + 1 : 0;
-      updateCarousel();
-      startAutoSlide();
-    });
+        // Navigate to next
+        nextBtn.addEventListener("click", () => {
+            clearInterval(autoSlideInterval);
+            index = index < carousel.children.length - 1 ? index + 1 : 0;
+            updateCarousel();
+            startAutoSlide();
+        });
 
-    // Update carousel
-    function updateCarousel() {
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-    }
+        // Update carousel
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
 
-    // Start auto slideshow
-    function startAutoSlide() {
-      autoSlideInterval = setInterval(() => {
-        index = index < carousel.children.length - 1 ? index + 1 : 0;
-        updateCarousel();
-      }, 3000);
-    }
+        // Start auto slideshow
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(() => {
+                index = index < carousel.children.length - 1 ? index + 1 : 0;
+                updateCarousel();
+            }, 3000);
+        }
 
-    startAutoSlide();
-  </script>
+        startAutoSlide();
+    </script>
 </body>
 
 </html>

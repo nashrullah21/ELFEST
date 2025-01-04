@@ -1,4 +1,4 @@
-<nav style="background-color: #971D12;" class="py-2 shadow-md">
+<nav class="bg-[#971D12] py-4 shadow-md">
     <div class="container mx-auto px-4 flex items-center justify-between lg:justify-center relative">
         <!-- Hamburger Button (Mobile Only) -->
         <button id="menu-toggle" class="block lg:hidden text-white focus:outline-none absolute left-4">
@@ -11,15 +11,22 @@
 
         <!-- Links -->
         <div id="menu"
-            class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 text-white lg:static lg:bg-transparent lg:py-0 bg-[#971D12] p-4 absolute top-full left-0 w-full lg:w-auto">
+            class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 text-white lg:static lg:bg-transparent lg:py-0 bg-[#971D12] p-4 absolute top-full left-0 w-full lg:w-auto z-10">
             <a href="home.html"
-                class="block lg:inline px-3 py-2 rounded-md text-center hover:bg-[#FF6F00] transition duration-300">Home</a>
+                class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#971D12] transition duration-300 font-semibold">Home</a>
             <a href="explore.html"
-                class="block lg:inline px-3 py-2 rounded-md text-center hover:bg-[#FF6F00] transition duration-300">Explore</a>
+                class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#971D12] transition duration-300 font-semibold">Explore</a>
             <a href="about.html"
-                class="block lg:inline px-3 py-2 rounded-md text-center hover:bg-[#FF6F00] transition duration-300">About</a>
+                class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#971D12] transition duration-300 font-semibold">About</a>
         </div>
     </div>
 </nav>
 
-<script src="script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        /* Apply the font to the body */
+    }
+</style>
+   
