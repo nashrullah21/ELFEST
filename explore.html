@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <style>
+        .titan-one {
+            font-family: "Titan One", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,12 +21,11 @@
         <button id="menu-toggle">Toggle Menu</button>
         <div id="menu" class="hidden">Menu Content</div>
     </nav> <!-- Konten halaman di sini -->
-    <div class="relative overflow-hidden">
-        <img src="./assets/others/background-with-pic.png" class="absolute top-0 w-full object-cover -z-10" />
-        <div class="pt-5">
-            <img src="./assets/explore/title.png" alt="Elfest Archives" class="max-w-32 mx-auto sm:max-w-48 z-0" />
-        </div>
-        <div class="sm:p-10 p-5">
+    <div class="relative overflow-hidden bg-[#E8F9FD]">
+        <img src="./assets/explore/upper-cloud.png" class="w-full object-cover -mt-10" />
+        <img src="./assets/explore/elfest-recap.png"
+            class="absolute top-12 left-1/2 -translate-x-1/2 w-56 object-cover" />
+        <div class="sm:p-10 p-5 mt-5">
             <div class="aspect-video h- w-full sm:max-w-md bg-black mx-auto">
                 <video width="100%" height="100%" controls autoplay muted>
                     <source src="./assets/explore/elfest.mp4" type="video/mp4">
@@ -26,15 +33,9 @@
                 </video>
             </div>
         </div>
-    </div>
-    <div class="relative py-10 ">
-        <div class="bg-[url('assets/explore/background.png')] bg-cover bg-center absolute inset-0 size-full -z-20">
-        </div>
-<img src="./assets/about/element .png" draggable="false"
-    class="absolute bottom-0 w-full h-[80px] sm:h-[80px] md:h-[100px] lg:h-[90px] object-cover object-top " />        <!-- START CAROUSEL -->
-        <div>
-            <img src="./assets/explore/elfest-ambience.png" alt="Elfest 2024's Ambiences"
-                class="max-w-sm sm:max-w-md mx-auto">
+        <!-- START CAROUSEL -->
+        <div class="mt-10">
+            <img src="./assets/explore/elfest-ambience.png" alt="Elfest 2024's Ambiences" class="w-72 mb-5 mx-auto">
             <div class="w-full sm:max-w-2xl max-w-xs mx-auto px-4 aspect-video">
                 <div class="relative">
                     <!-- Carousel container -->
@@ -52,30 +53,32 @@
 
                     <!-- Navigation arrows -->
                     <button id="prevBtn"
-                        class="absolute top-1/2 -left-1 sm:-left-3 transform -translate-y-1/2 -translate-x-full bg-black p-1 rounded-full shadow-md hover:bg-gray-700 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ffffff"
-                            class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        class="absolute top-1/2 -left-1 sm:-left-3 transform -translate-y-1/2 -translate-x-full p-1 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#030712"
+                            class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
                         </svg>
                     </button>
                     <button id="nextBtn"
-                        class="absolute top-1/2 -right-1 sm:-right-3 transform -translate-y-1/2 translate-x-full bg-black p-1 rounded-full shadow-md hover:bg-gray-700 focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ffffff"
-                            class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        class="absolute top-1/2 -right-1 sm:-right-3 transform -translate-y-1/2 translate-x-full p-1 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#030712"
+                            class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
                         </svg>
                     </button>
                 </div>
             </div>
         </div>
         <!-- END CAROUSEL -->
-        <div class="space-y-3  mt-10 relative">
-            <img src="./assets/explore/Buy-your-tiket.png" alt="Buy Your Ticket Now"
-                class="sm:max-w-md max-w-xs mx-auto" />
-        <button onclick="window.open('https://www.goersapp.com/event/elfest2025', '_blank');"
-            class="z-10 mx-auto rounded-full font-semibold font-titan-one text-lg bg-white hover:brightness-95 shadow-[4px_4px_0px_rgba(0,0,0,1)] sm:px-20 px-10 py-1 border border-black sm:py-3 block tracking-widest">
-            CLICK HERE
-        </button>
+
+        <div class="mt-10 flex justify-center flex-col gap-2 pb-8 relative">
+            <img src="./assets/explore/bottom-grass.png" draggable="false" class="left-0 right-0 bottom-0 absolute" />
+            <img src="./assets/explore/buy-your-tiket.png" alt="Buy Your Ticket Now"
+                class="sm:max-w-md max-w-xs mx-auto " />
+            <a href="https://www.goersapp.com/event/elfest2025" target="_blank"
+                class="z-10 mx-auto inline-block rounded-full text-[#094D62] font-semibold titan-one text-lg bg-white hover:brightness-95 shadow-[4px_4px_0px_rgba(0,0,0,1)] sm:px-20 px-7 py-1.5 border border-black sm:py-3 tracking-widest">
+                CLICK HERE
+            </a>
         </div>
     </div>
     <div id="footer"></div>
