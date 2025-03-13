@@ -1,65 +1,119 @@
 <!-- Navigation Bar -->
 <nav class="bg-[#abe5f2] py-2 shadow-md">
-    <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between">
-            <!-- Left side: Hamburger -->
-            <div class="flex items-center">
-                <label for="menu-toggle" class="block lg:hidden text-white cursor-pointer">
-                    <img src="assets/others/hamburger.svg" alt="Menu" class="w-8 h-8 object-contain image-rendering-crisp">
-                </label>
-                <!-- Title logo - hidden on mobile -->
-                <img src="assets/others/TITLE.png" alt="Logo" class="h-12 w-12 hidden lg:block object-contain image-rendering-crisp">
-            </div>
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between">
+      <!-- Left side: Hamburger -->
+      <div class="flex items-center">
+        <label
+          for="menu-toggle"
+          class="block lg:hidden text-white cursor-pointer"
+        >
+          <img
+            src="assets/others/hamburger.svg"
+            alt="Menu"
+            class="w-8 h-8 object-contain image-rendering-crisp"
+          />
+        </label>
+        <!-- Title logo - hidden on mobile -->
+        <img
+          src="assets/others/TITLE.png"
+          alt="Logo"
+          class="h-12 w-12 hidden lg:block object-contain image-rendering-crisp"
+        />
+      </div>
 
-            <!-- Center: Title logo for mobile, Navigation Menu for desktop -->
-            <div class="flex items-center">
-                <!-- Title logo - visible only on mobile -->
-                <img src="assets/others/TITLE.png" alt="Logo" class="h-12 w-12 block lg:hidden object-contain image-rendering-crisp">
-                <!-- Navigation menu - visible only on desktop -->
-                <div class="hidden lg:flex flex-row items-center space-x-6 text-white">
-                    <a href="home.html" class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#97e4f5] transition duration-300 font-semibold">Home</a>
-                    <a href="explore.html" class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#97e4f5] transition duration-300 font-semibold">Explore</a>
-                    <a href="about.html" class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#97e4f5] transition duration-300 font-semibold">About</a>
-                    <a href="contact.html" class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#97e4f5] transition duration-300 font-semibold">Contact</a>
-                </div>
-            </div>
-
-            <!-- Right side: EXP BY logo -->
-            <div class="flex items-center">
-                <img src="assets/others/EXP BY.png" alt="EXP BY Logo" class="h-12 w-12 object-contain image-rendering-crisp">
-            </div>
+      <!-- Center: Title logo for mobile, Navigation Menu for desktop -->
+      <div class="flex items-center">
+        <!-- Title logo - visible only on mobile -->
+        <img
+          src="assets/others/TITLE.png"
+          alt="Logo"
+          class="h-12 w-12 block lg:hidden object-contain image-rendering-crisp"
+        />
+        <!-- Navigation menu - visible only on desktop -->
+        <div class="hidden lg:flex flex-row items-center space-x-6 text-white">
+          <a
+            href="home.html"
+            class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#97e4f5] transition duration-300 font-semibold"
+            >Home</a
+          >
+          <a
+            href="explore.html"
+            class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#97e4f5] transition duration-300 font-semibold"
+            >Explore</a
+          >
+          <a
+            href="about.html"
+            class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#97e4f5] transition duration-300 font-semibold"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="block lg:inline px-4 py-2 rounded-md text-center hover:bg-white hover:text-[#97e4f5] transition duration-300 font-semibold"
+            >Contact</a
+          >
         </div>
+      </div>
 
-        <!-- Mobile Menu (Inside nav) -->
-        <input type="checkbox" id="menu-toggle" class="hidden">
-        <div class="hidden mt-4 lg:hidden" id="mobile-menu">
-            <div class="py-2">
-                <a href="home.html" class="block px-4 py-2 text-white hover:bg-[#97e4f5] rounded-md transition duration-300 font-semibold">Home</a>
-                <a href="explore.html" class="block px-4 py-2 text-white hover:bg-[#97e4f5] rounded-md transition duration-300 font-semibold">Explore</a>
-                <a href="about.html" class="block px-4 py-2 text-white hover:bg-[#97e4f5] rounded-md transition duration-300 font-semibold">About</a>
-                <a href="contact.html" class="block px-4 py-2 text-white hover:bg-[#97e4f5] rounded-md transition duration-300 font-semibold">Contact</a>
-            </div>
-        </div>
+      <!-- Right side: EXP BY logo -->
+      <div class="flex items-center">
+        <img
+          src="assets/others/EXP BY.png"
+          alt="EXP BY Logo"
+          class="h-12 w-12 object-contain image-rendering-crisp"
+        />
+      </div>
     </div>
+
+    <!-- Mobile Menu (Inside nav) -->
+    <input type="checkbox" id="menu-toggle" class="hidden" />
+    <div class="hidden mt-4 lg:hidden" id="mobile-menu">
+      <div class="py-2">
+        <a
+          href="home.html"
+          class="block px-4 py-2 text-white hover:bg-[#97e4f5] rounded-md transition duration-300 font-semibold"
+          >Home</a
+        >
+        <a
+          href="explore.html"
+          class="block px-4 py-2 text-white hover:bg-[#97e4f5] rounded-md transition duration-300 font-semibold"
+          >Explore</a
+        >
+        <a
+          href="about.html"
+          class="block px-4 py-2 text-white hover:bg-[#97e4f5] rounded-md transition duration-300 font-semibold"
+          >About</a
+        >
+        <a
+          href="contact.html"
+          class="block px-4 py-2 text-white hover:bg-[#97e4f5] rounded-md transition duration-300 font-semibold"
+          >Contact</a
+        >
+      </div>
+    </div>
+  </div>
 </nav>
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+  rel="stylesheet"
+/>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .image-rendering-crisp {
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: crisp-edges;
-        -webkit-font-smoothing: antialiased;
-        transform: translateZ(0);
-        backface-visibility: hidden;
-    }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
 
-    /* Simple CSS-only mobile menu toggle */
-    #menu-toggle:checked ~ #mobile-menu {
-        display: block;
-    }
+  .image-rendering-crisp {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -webkit-font-smoothing: antialiased;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  /* Simple CSS-only mobile menu toggle */
+  #menu-toggle:checked ~ #mobile-menu {
+    display: block;
+  }
 </style>

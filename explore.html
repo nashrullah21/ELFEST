@@ -1,133 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        .titan-one {
-            font-family: "Titan One", sans-serif;
-        }
+      .titan-one {
+        font-family: "Titan One", sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav id="navbar">
-        <button id="menu-toggle">Toggle Menu</button>
-        <div id="menu" class="hidden">Menu Content</div>
+      <button id="menu-toggle">Toggle Menu</button>
+      <div id="menu" class="hidden">Menu Content</div>
     </nav>
     <div class="relative overflow-hidden bg-[#E8F9FD] min-h-screen">
-
-        <img src="./assets/explore/upper-cloud.png" class="w-full md:w-full lg:w-[65%] object-cover -mt-6 md:-mt-32 lg:-mt-40 lg:mx-auto" />
-    <img src="./assets/explore/elfest-recap.png" class="absolute top-10 md:top-14 lg:top-20 left-1/2 -translate-x-1/2 w-56 md:w-72 lg:w-96 object-cover" />
-        <!-- <img src="./assets/explore/upper-cloud.png" class="w-full object-cover -mt-10" />
+      <img
+        src="./assets/explore/upper-cloud.png"
+        class="w-full md:w-full lg:w-[65%] object-cover -mt-6 md:-mt-32 lg:-mt-40 lg:mx-auto"
+      />
+      <img
+        src="./assets/explore/elfest-recap.png"
+        class="absolute top-10 md:top-14 lg:top-20 left-1/2 -translate-x-1/2 w-56 md:w-72 lg:w-96 object-cover"
+      />
+      <!-- <img src="./assets/explore/upper-cloud.png" class="w-full object-cover -mt-10" />
         <img src="./assets/explore/elfest-recap.png"
             class="absolute top-12 left-1/2 -translate-x-1/2 w-56 md:w-72 lg:w-96 object-cover" /> -->
-        
-        <div class="container mx-auto max-w-7xl">
-            <div class="sm:p-10 p-5 mt-5">
-                <div class="aspect-video w-full sm:max-w-2xl lg:max-w-4xl bg-black mx-auto">
-                    <video width="100%" height="100%" controls autoplay muted>
-                        <source src="./assets/explore/elfest.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
 
-            <!-- START CAROUSEL -->
-            <div class="mt-10">
-                <img src="./assets/explore/elfest-ambience.png" alt="Elfest 2024's Ambiences" class="w-72 md:w-96 lg:w-[500px] mb-5 mx-auto">
-                <div class="w-full sm:max-w-2xl lg:max-w-4xl max-w-xs mx-auto px-4 aspect-video">
-                    <div class="relative">
-                        <!-- Carousel container -->
-                        <div class="overflow-hidden rounded-lg shadow-lg">
-                            <div id="carousel" class="flex transition-transform duration-500">
-                                <img src="./assets/carousel/1.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-                                <img src="./assets/carousel/2.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-                                <img src="./assets/carousel/3.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-                                <img src="./assets/carousel/4.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-                                <img src="./assets/carousel/5.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-                                <img src="./assets/carousel/6.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-                                <img src="./assets/carousel/7.jpg" class="w-full flex-shrink-0" alt="Slide 1" />
-                            </div>
-                        </div>
-
-                        <!-- Navigation arrows -->
-                        <button id="prevBtn"
-                            class="absolute top-1/2 -left-1 sm:-left-8 lg:-left-12 transform -translate-y-1/2 -translate-x-full p-1 focus:outline-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#030712"
-                                class="size-6 md:size-8 lg:size-10">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </button>
-                        <button id="nextBtn"
-                            class="absolute top-1/2 -right-1 sm:-right-8 lg:-right-12 transform -translate-y-1/2 translate-x-full p-1 focus:outline-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#030712"
-                                class="size-6 md:size-8 lg:size-10">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- END CAROUSEL -->
-
-            <div class="mt-10 flex justify-center flex-col gap-2 pb-8 relative">
-                <img src="./assets/explore/bottom-grass.png" draggable="false" class="left-0 right-0 bottom-0 absolute w-full lg:w-[70%] mx-auto" />
-                <img src="./assets/explore/buy-your-tiket.png" alt="Buy Your Ticket Now"
-                    class="sm:max-w-md md:max-w-lg lg:max-w-xl max-w-xs mx-auto" />
-                <a href="https://www.goersapp.com/event/elfest2025" target="_blank"
-                    class="z-10 mx-auto inline-block rounded-full mt-10 text-[#094D62] font-semibold titan-one text-lg md:text-xl lg:text-2xl bg-white hover:brightness-95 shadow-[4px_4px_0px_rgba(0,0,0,1)] sm:px-20 px-7 py-1.5 border border-black sm:py-3 tracking-widest">
-                    CLICK HERE
-                </a>
-            </div>
+      <div class="container mx-auto max-w-7xl">
+        <div class="sm:p-10 p-5 mt-5">
+          <div
+            class="aspect-video w-full sm:max-w-2xl lg:max-w-4xl bg-black mx-auto"
+          >
+            <video width="100%" height="100%" controls autoplay muted>
+              <source src="./assets/explore/elfest.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
+
+        <!-- START CAROUSEL -->
+        <div class="mt-10 mb-20">
+          <img
+            src="./assets/explore/elfest-ambience.png"
+            alt="Elfest 2024's Ambiences"
+            class="w-72 md:w-96 lg:w-[500px] mb-5 mx-auto"
+          />
+          <div
+            class="w-full sm:max-w-2xl lg:max-w-4xl max-w-xs mx-auto px-4 aspect-video"
+          >
+            <div class="relative">
+              <!-- Carousel container -->
+              <div class="overflow-hidden rounded-lg shadow-lg">
+                <div
+                  id="carousel"
+                  class="flex transition-transform duration-500"
+                >
+                  <img
+                    src="./assets/carousel/1.jpg"
+                    class="w-full flex-shrink-0"
+                    alt="Slide 1"
+                  />
+                  <img
+                    src="./assets/carousel/2.jpg"
+                    class="w-full flex-shrink-0"
+                    alt="Slide 1"
+                  />
+                  <img
+                    src="./assets/carousel/3.jpg"
+                    class="w-full flex-shrink-0"
+                    alt="Slide 1"
+                  />
+                  <img
+                    src="./assets/carousel/4.jpg"
+                    class="w-full flex-shrink-0"
+                    alt="Slide 1"
+                  />
+                  <img
+                    src="./assets/carousel/5.jpg"
+                    class="w-full flex-shrink-0"
+                    alt="Slide 1"
+                  />
+                  <img
+                    src="./assets/carousel/6.jpg"
+                    class="w-full flex-shrink-0"
+                    alt="Slide 1"
+                  />
+                  <img
+                    src="./assets/carousel/7.jpg"
+                    class="w-full flex-shrink-0"
+                    alt="Slide 1"
+                  />
+                </div>
+              </div>
+
+              <!-- Navigation arrows -->
+              <button
+                id="prevBtn"
+                class="absolute top-1/2 -left-1 sm:-left-8 lg:-left-12 transform -translate-y-1/2 -translate-x-full p-1 focus:outline-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="#030712"
+                  class="size-6 md:size-8 lg:size-10"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                id="nextBtn"
+                class="absolute top-1/2 -right-1 sm:-right-8 lg:-right-12 transform -translate-y-1/2 translate-x-full p-1 focus:outline-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="#030712"
+                  class="size-6 md:size-8 lg:size-10"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- END CAROUSEL -->
+
+        <div class="flex justify-center flex-col gap-2 pb-8">
+          <img
+            src="./assets/explore/bottom-grass.png"
+            draggable="false"
+            class="left-0 right-0 bottom-0 absolute w-full mx-auto"
+          />
+          <img
+            src="./assets/explore/Buy-your-tiket.png"
+            alt="Buy Your Ticket Now"
+            class="sm:max-w-md md:max-w-lg lg:max-w-xl max-w-xs mx-auto min-[1920px]:mb-32 min-[768px]:mb-12"
+          />
+          <button
+            onclick="window.open('https://www.goersapp.com/event/elfest2025', '_blank');"
+            class="z-10 mx-auto rounded-full font-extrabold font-titan-one text-lg text-[#094D62] bg-white hover:brightness-95 shadow-[4px_4px_0px_rgba(9,77,98,1)] sm:px-20 px-10 py-3 border-2 border-[#094D62] sm:py-3 block tracking-widest leading-tight"
+            style="-webkit-text-stroke: 1px #094d62"
+          >
+            CLICK HERE
+          </button>
+        </div>
+      </div>
     </div>
     <div id="footer"></div>
     <script src="script.js"></script>
     <script>
-        const carousel = document.getElementById("carousel");
-        const prevBtn = document.getElementById("prevBtn");
-        const nextBtn = document.getElementById("nextBtn");
+      const carousel = document.getElementById("carousel");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
 
-        let index = 0;
-        let autoSlideInterval;
+      let index = 0;
+      let autoSlideInterval;
 
-        prevBtn.addEventListener("click", () => {
-            clearInterval(autoSlideInterval);
-            index = index > 0 ? index - 1 : carousel.children.length - 1;
-            updateCarousel();
-            startAutoSlide();
-        });
-
-        // Navigate to next
-        nextBtn.addEventListener("click", () => {
-            clearInterval(autoSlideInterval);
-            index = index < carousel.children.length - 1 ? index + 1 : 0;
-            updateCarousel();
-            startAutoSlide();
-        });
-
-        // Update carousel
-        function updateCarousel() {
-            carousel.style.transform = `translateX(-${index * 100}%)`;
-        }
-
-        // Start auto slideshow
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(() => {
-                index = index < carousel.children.length - 1 ? index + 1 : 0;
-                updateCarousel();
-            }, 3000);
-        }
-
+      prevBtn.addEventListener("click", () => {
+        clearInterval(autoSlideInterval);
+        index = index > 0 ? index - 1 : carousel.children.length - 1;
+        updateCarousel();
         startAutoSlide();
-    </script>
-</body>
+      });
 
+      // Navigate to next
+      nextBtn.addEventListener("click", () => {
+        clearInterval(autoSlideInterval);
+        index = index < carousel.children.length - 1 ? index + 1 : 0;
+        updateCarousel();
+        startAutoSlide();
+      });
+
+      // Update carousel
+      function updateCarousel() {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      // Start auto slideshow
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+          index = index < carousel.children.length - 1 ? index + 1 : 0;
+          updateCarousel();
+        }, 3000);
+      }
+
+      startAutoSlide();
+    </script>
+  </body>
 </html>
