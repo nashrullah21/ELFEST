@@ -1,108 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .background-base {
-            background-image: url("assets/about/background\ with\ pic.png");
-            background-size: cover;
-            background-position: top;
-        }
+      .background-base {
+        background-image: url("assets/others/Landing\ page.png");
+        background-size: cover;
+        background-position: center top -350px;
+      }
 
-        .element-behind-click-here {
-            background-image: url("assets/about/element\ .png");
-            background-size: cover;
-            background-position: top;
-        }
+      .poppins-thin {
+        font-family: "Poppins", serif;
+        font-weight: 100;
+        font-style: normal;
+      }
 
-        .poppins-thin {
-            font-family: "Poppins", serif;
-            font-weight: 100;
-            font-style: normal;
-        }
-
-        .titan-one-regular {
-            font-family: "Titan One", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
+      .titan-one-regular {
+        font-family: "Titan One", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap"
-        rel="stylesheet" />
-</head>
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="min-h-screen flex flex-col">
-    <nav id="navbar">
-        <button id="menu-toggle">Toggle Menu</button>
-        <div id="menu" class="hidden">Menu Content</div>
-    </nav> <!-- Konten halaman di sini -->
-    <div id="container-base" class="flex justify-center background-base relative">
-
-        <div>
-            <div class="flex justify-center">
-                <h1 id="title-page"
-                    class="min-[2048px]:text-7xl min-[2048px]:mt-20 absolute text-center titan-one-regular text-4xl text-[#971D12] mt-5 md:text-[40px] 2xl:text-5xl"
-                    style="-webkit-text-stroke: 1.5px white; color: #971d12">
-                    ABOUT US
-                </h1>
-            </div>
-
-            <div id="image-konser" class="mt-16 flex justify-center items-center 2xl:mt-20 min-[2048px]:mt-40">
-                <img class="w-[340px] h-[170px] md:w-[500px] md:h-[270px] 2xl:w-[700px] 2xl:h-[380px] min-[2048px]:w-[1200px] min-[2048px]:h-[670px]"
-                    src="assets/about/image-konser.jpg" alt="image-konser-page-about" />
-            </div>
-            <div class="px-8 min-[820px]:px-10">
-                <p id="paragraf-about1"
-                    class="min-[2048px]:text-2xl 2xl:text-xl poppins-thin font-normal text-[10px] text-center mt-3 text-[#971D12] md:text-[16px] md:mt-[15px]">
-                    Success sebagai festival music besar di Kota Cimahi pada gelaran
-                    pertama, Euphoria Life Festival mendapatkan sambutan dan kesan
-                    positif dari para pengunjung, yang membuktikan kualitasdan pelayanan
-                    yang ditawarkan.
-                </p>
-                <p id="paragraf-about2"
-                    class="min-[2048px]:mt-[30px] min-[2048px]:text-2xl 2xl:text-xl poppins-thin font-normal text-[10px] mt-3 text-center text-[#971D12] md:text-[16px]">
-                    Euphoria Life Festival Vol.2 hadir kembali dengan semangat yang
-                    lebih besar, mempersiapkan acara yang lebih matang dan menampilkan
-                    deretan artis serta musisi yang mengejutkan. Line up yang trendy dan
-                    menarik ini akan memuaskan hati dan menghadirkan kesenangan bagi
-                    semua pengunjung, yang akan merasakan euforia dari lagu-lagu para
-                    musisi.
-                </p>
-
-                <p id="paragraf-about3"
-                    class="min-[2048px]:mt-[30px] min-[2048px]:text-2xl 2xl:text-xl poppins-thin font-normal text-[10px] mt-3 text-center text-[#971D12] md:text-[16px]">
-                    Suguhan hiburan ELFEST kali ini mengusung tema dunia khayal dan
-                    mimpi, serta menampilkan visual dan audio yang memukau, penampilan
-                    yang menawan, dan kesenangan yang mendorong kreativitas,
-                    menjadikannya sebagai inspirasi bagi setiap pengunjung.
-                </p>
-            </div>
-
-                        <img src="./assets/about/element .png" draggable="false" 
-                    class="absolute bottom-0 w-full h-[60px] sm:h-[60px] md:h-[80px] lg:h-[90px] object-cover object-top " />
-
-            <div class="space-y-3 p-7 relative">
-
-                <img src="./assets/explore/Buy-your-tiket.png" alt="Buy Your Ticket Now" class="sm:max-w-md max-w-xs mx-auto" />
-                <button onclick="window.open('https://www.goersapp.com/event/elfest2025', '_blank');"
-                    class="z-10 mx-auto rounded-full font-semibold font-titan-one text-lg bg-white hover:brightness-95 shadow-[4px_4px_0px_rgba(0,0,0,1)] sm:px-20 px-10 py-1 border border-black sm:py-3 block tracking-widest">
-                    CLICK HERE
-                </button>
-            </div>
-
+  <body class="min-h-screen flex flex-col">
+    <nav id="navbar" class="z-50">
+      <button id="menu-toggle">Toggle Menu</button>
+      <div id="menu" class="hidden">Menu Content</div>
+    </nav>
+    <!-- Konten halaman di sini -->
+    <div
+      id="container-base"
+      class="flex justify-center background-base relative"
+    >
+      <div>
+        <img
+          src="./assets/explore/upper-cloud.png"
+          class="absolute w-full md:w-full lg:w-[65%] object-cover -mt-10 md:-mt-32 lg:-mt-40 lg:mx-auto"
+        />
+        <div class="flex justify-center mt-10 min-[1920px]:mt-20">
+          <img
+            src="/assets/about/about-us.png"
+            alt="about-us"
+            class="z-50 w-auto h-[60px] min-[1920px]:h-[100px]"
+          />
         </div>
+
+        <div
+          id="image-konser"
+          class="mt-[8px] flex justify-center items-center 2xl:mt-10 z-50"
+        >
+          <img
+            class="w-[300px] h-[170px] md:w-[500px] md:h-[270px] 2xl:w-[700px] 2xl:h-[380px] min-[2048px]:w-[1200px] min-[2048px]:h-[670px] z-50"
+            src="assets/about/image-konser.jpg"
+            alt="image-konser-page-about"
+          />
+        </div>
+        <div class="px-8 min-[820px]:px-10 mt-8 min-[1280px]:px-24">
+          <img src="/assets/about/text.png" alt="text" />
+        </div>
+
+        <img
+          src="./assets/about/bg-buttom.png"
+          draggable="false"
+          class="absolute bottom-0 w-full h-[100px] md:h-[130px] min-[800px]:h-[136px] min-[820px]:h-[150px] min-[1114px]:h-[180px] min-[1280px]:h-[290px] 2xl:h-[250px] min-[1920px]:h-[400px] object-cover min-[1920px]:left-0 min-[1920px]:w-full"
+        />
+
+        <div
+          class="space-y-3 p-7 relative mb-4 min-[1280px]:mb-24 min-[1920px]:mb-36"
+        >
+          <img
+            src="./assets/explore/Buy-your-tiket.png"
+            alt="Buy Your Ticket Now"
+            class="sm:max-w-md max-w-xs mx-auto"
+          />
+          <button
+            onclick="window.open('https://www.goersapp.com/event/elfest2025', '_blank');"
+            class="z-10 mx-auto rounded-full font-extrabold font-titan-one text-lg text-[#094D62] bg-white hover:brightness-95 shadow-[4px_4px_0px_rgba(9,77,98,1)] sm:px-20 px-10 py-3 border-2 border-[#094D62] sm:py-3 block tracking-widest leading-tight"
+            style="-webkit-text-stroke: 1px #094d62"
+          >
+            CLICK HERE
+          </button>
+        </div>
+      </div>
     </div>
 
     <div id="footer"></div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
