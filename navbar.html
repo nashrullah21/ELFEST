@@ -6,7 +6,7 @@
       <div class="flex items-center">
         <label
           for="menu-toggle"
-          class="flex lg:hidden text-white cursor-pointer h-20 w-20 items-center"
+          class="block lg:hidden text-white cursor-pointer"
         >
           <img
             src="assets/others/hamburger.svg"
@@ -18,7 +18,7 @@
         <img
           src="assets/others/TITLE.png"
           alt="Logo"
-          class="h-28 w-28 hidden lg:block object-contain image-rendering-crisp"
+          class="sm:h-20 w-20 hidden lg:block w-40 h-40 object-contain image-rendering-crisp"
         />
       </div>
 
@@ -28,7 +28,7 @@
         <img
           src="assets/others/TITLE.png"
           alt="Logo"
-          class="h-28 w-28 block lg:hidden object-contain image-rendering-crisp"
+          class="h-20 w-20 block lg:hidden object-contain image-rendering-crisp"
         />
         <!-- Navigation menu - visible only on desktop -->
         <div class="hidden lg:flex flex-row items-center space-x-6 text-white">
@@ -60,14 +60,14 @@
         <img
           src="assets/others/EXP BY.png"
           alt="EXP BY Logo"
-          class="h-20 w-20 object-contain image-rendering-crisp"
+          class="sm:h-20 w-20 lg:h-28 w-40 block object-contain image-rendering-crisp"
         />
       </div>
     </div>
 
     <!-- Mobile Menu (Inside nav) -->
     <input type="checkbox" id="menu-toggle" class="hidden" />
-    <div class="hidden mt-0 lg:hidden" id="mobile-menu">
+    <div class="hidden mt-4 lg:hidden" id="mobile-menu">
       <div class="py-2">
         <a
           href="home.html"
